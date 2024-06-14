@@ -1,0 +1,62 @@
+.task_container {
+    background-color: #2e2b33;
+    border-radius: 4px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskLeftMargin {
+    margin-left: 22px;
+}
+
+.task_atEnd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.task_description {
+    color: green;
+}
+
+.task_container > span {
+    padding-left: 20px;
+}
+
+.rainbow-bg{
+    color: white;
+    background: linear-gradient(
+      -70deg,
+        #9400D3,
+        #4B0082,
+        #0000FF,
+        #00FF00,
+        #FFFF00,
+        #FF7F00,
+        #FF0000
+    );
+    background-size: 1200% 1200%;
+    animation: gradient 5s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 25%;
+    }
+    25% {
+      background-position: 25% 50%;
+    }
+    50% {
+      background-position: 50% 75%;
+    }
+    75% {
+      background-position: 75% 100%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+  

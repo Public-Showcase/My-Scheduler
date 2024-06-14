@@ -1,0 +1,42 @@
+body {
+  /* margin-left: 10px;
+  margin-right: 10px; */
+
+  /* overflow: hidden; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: black;
+  color: aliceblue;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* 1 line css for dark theme */
+
+/* :root {
+  filter: invert(100%);
+} */
+
+.dark-mode {
+  /* filter: invert(100%); */
+  /* filter: invert(1) hue-rotate(180deg); */
+
+  /* custom colored theme toggle */
+  background-color: black;
+  color: white;
+}
+
+.invert {
+  /* filter: invert(100%); */
+
+  /* custom colored theme toggle */
+  color: green;
+}

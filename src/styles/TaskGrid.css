@@ -1,0 +1,24 @@
+.gridBox {
+    background-color: black;
+    border: 3px solid #212121;
+    border-radius: 8px;
+    flex: 1;
+    height: calc( 100dvh/2 - 8rem ); /* THIS IS IMPORTANT FORMULA */
+    overflow: scroll;
+}
+
+.taskGridContainer {
+    padding-bottom: 10px;
+}
+
+.verticalText {
+    margin-top: -20px; 
+    transform: rotate(-90deg) translate(-155px,-155px); /*arg1 -> up-down, arg2 -> left-right*/
+    width: calc( 100dvh/2 - 8rem );
+}
+
+.boxLabels {
+    background-color: #3f51b5;
+    color: yellow;
+    text-align: center;
+}

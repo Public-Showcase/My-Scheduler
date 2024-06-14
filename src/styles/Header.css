@@ -1,0 +1,84 @@
+/* Header.css */
+
+/* Dark theme colors */
+:root {
+    --background-color: #212121; /* Main background color */
+    --text-color: #ffffff; /* Text color */
+    --primary-color: #bb86fc; /* Primary color */
+    --secondary-color: #f44336; /* Secondary color */
+  }
+  
+  .header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; /* Adjust z-index as needed */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 10px 20px;
+  }
+  
+  .header__title {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    flex: 100%;
+    justify-content: space-between;
+  }
+  
+  .menu a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    color: var(--primary-color);
+  }
+ 
+  .icon-button {
+    color: var(--text-color);
+  }
+  
+  .icon-button:hover {
+    color: var(--primary-color);
+  }
+  
+  .logout-button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin-left: 10px;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f;
+  }
+
+/* Specific styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+  }
+  
+  .menu {
+    flex-wrap: wrap;
+  }
+  
+  .menu a {
+    margin-top: 10px; /* Add some spacing between the links */
+  }
+  
+  .logout-button {
+    margin-left: 0; /* Reset the left margin */
+  }
+}
+  

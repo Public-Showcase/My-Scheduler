@@ -1,0 +1,42 @@
+.form_description {
+    flex: 0.8
+}
+
+.form_main {
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #212121;
+    padding: 10px;
+}
+
+/* TODO : Fix the patch bellow */
+#outlined-basic {
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0); /* this is not native component style change, but just temporary patch */
+    border-radius: 4px;
+}
+
+
+.pulsing {
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    /* background:#000; */
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.218);
+    animation:pl1 1s infinite;
+  }
+  @keyframes pl1 {
+      100% {box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.218)}
+  }
+
+  /* Specific styles for mobile devices */
+@media only screen and (max-width: 767px) {
+    .form_main {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: aqua;
+    }
+  }

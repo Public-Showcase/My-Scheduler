@@ -1,0 +1,26 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #212121; */
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #bb86fc;
+    margin: 20px;
+}
+
+.link {
+    color: #bb86fc;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+  

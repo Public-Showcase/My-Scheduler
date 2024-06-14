@@ -1,0 +1,17 @@
+.dialogTitle {
+    background-color: #212121;
+    color: #ffffff;
+  }
+  
+  .dialogContent {
+    background-color: #212121; 
+  }
+
+  #alert-dialog-description {
+    color: #ffffff;
+  }
+  
+  .dialogActions {
+    background-color: #212121;
+  }
+  

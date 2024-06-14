@@ -1,0 +1,4 @@
+.tasklist_container {
+    height: calc( 100vh - 13.65rem ); /* THIS IS IMPORTANT FORMULA */
+    overflow: scroll;
+}

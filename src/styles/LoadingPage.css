@@ -1,0 +1,27 @@
+.loader {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.loader_title {
+    color: rgb(15, 154, 253);
+}
+
+.loader_animation {
+    display: flex;
+    flex-direction: row;
+}
+
+.loader__image {
+    height: 6rem;
+    width: 6rem;
+}
+
+.loader_text {
+    padding-right: 5px;
+    font-weight: bold;
+}

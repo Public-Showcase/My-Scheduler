@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Triage webApp - a scheduler app based on matrix"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <!-- material ui react.js requirenments  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <title>Triage WebApp</title>
+
+    <!-- OpenReplay Tracking Code for my first project -->
+  <script>
+    // (function(A,s,a,y,e,r){
+    //   r=window.OpenReplay=[s,r,e,[y-1]];
+    //   s=document.createElement('script');s.src=a;s.async=!A;
+    //   document.getElementsByTagName('head')[0].appendChild(s);
+    //   r.start=function(v){r.push([0])};
+    //   r.stop=function(v){r.push([1])};
+    //   r.setUserID=function(id){r.push([2,id])};
+    //   r.setUserAnonymousID=function(id){r.push([3,id])};
+    //   r.setMetadata=function(k,v){r.push([4,k,v])};
+    //   r.event=function(k,p,i){r.push([5,k,p,i])};
+    //   r.issue=function(k,p){r.push([6,k,p])};
+    //   r.isActive=function(){return false};
+    //   r.getSessionToken=function(){};
+    // })(0, "HiuSydosugVJ7b2Yua24", "//static.openreplay.com/latest/openreplay.js",1,29);
+
+    // dentify your users when recording a session
+    // tracker.setUserID('john@doe.com'); 
+
+    // // Inject metadata when recording sessions
+    // tracker.setMetadata('plan', 'premium');
+  </script>
+    
+    <!--for PWA_Zk-->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('worker.js').then(function(registration) {
+            console.log('Worker registration successful', registration.scope);
+          }, function(err) {
+            console.log('Worker registration failed', err);
+          }).catch(function(err) {
+            console.log(err);
+          });
+        });
+      } else {
+        console.log('Service Worker is not supported by browser.');
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
