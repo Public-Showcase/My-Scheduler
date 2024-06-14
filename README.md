@@ -2,13 +2,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Triage (MyScheduler)
 
+- Designed and developed a user-friendly drag-and-drop interface, uniquely tailored to optimize productivity through the Eisenhower Matrix, fostering intuitive task prioritization.
+- Leveraged technologies including React.js, Redux, and Firebase to architect a robust and scalable solution.
+- Engineered the application as a Progressive Web App (PWA), ensuring a native app-like experience across devices while enabling offline functionality.
+
+![MyScheduler1](MySchedular1.png)
+![MyScheduler2](MySchedular2.png)
+
 ## icons used from
 - Material UI icons : https://mui.com/components/material-icons/
 
 ## depolyed at
 
-- netlify : https://myscheduler.netlify.app/
-- firebase hosting : https://myscheduler-c8f00.web.app/
+- Netlify : https://myscheduler.netlify.app/    
+- Firebase Hosting : https://myscheduler-c8f00.web.app/
 
 ## Available Scripts
 
